@@ -30,6 +30,9 @@ export interface CreatorProfile {
   hobbies: string[];
   followers: string;
   callMinutes: string;
+  smartLink1?: string;
+  smartLink2?: string;
+  smartLink3?: string;
 }
 
 export const INITIAL_REVIEWS: ReviewItem[] = [
@@ -104,7 +107,10 @@ export const INITIAL_CREATORS: CreatorProfile[] = [
     languages: ['English', 'Spanish', 'Italian'],
     hobbies: ['Dancing', 'Travel', 'Fashion', 'Beach walks'],
     followers: '148.5k',
-    callMinutes: '4,200+'
+    callMinutes: '4,200+',
+    smartLink1: 'https://auctionr.org/4/6aa43a312f95a6b31bfcb5dc6e435ceb',
+    smartLink2: 'https://auctionr.org/4/b88cd54096b427eb256f444c858e4061',
+    smartLink3: 'https://auctionr.org/4/f93469376ce9310b596779d65b28dde3'
   },
   {
     id: 'elena',

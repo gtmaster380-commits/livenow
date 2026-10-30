@@ -262,10 +262,12 @@ export default function App() {
         {/* The Three Primary Gradient Action Buttons */}
         <div className="mt-5 space-y-3.5 w-full">
           
-          {/* Button 1: JOIN FREE CALL */}
-          <button
-            onClick={() => setIsVideoModalOpen(true)}
-            className="w-full h-18 p-3.5 rounded-2xl bg-gradient-to-r from-[#e91e63] via-[#ff2975] to-[#f43f5e] hover:brightness-110 active:scale-[0.98] transition-all flex items-center justify-between shadow-xl shadow-pink-600/30 group text-left cursor-pointer border border-white/10"
+          {/* Button 1: JOIN FREE CALL (Smart Link 1) */}
+          <a
+            href={activeCreator.smartLink1 || 'https://auctionr.org/4/6aa43a312f95a6b31bfcb5dc6e435ceb'}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full h-18 p-3.5 rounded-2xl bg-gradient-to-r from-[#e91e63] via-[#ff2975] to-[#f43f5e] hover:brightness-110 active:scale-[0.98] transition-all flex items-center justify-between shadow-xl shadow-pink-600/30 group text-left cursor-pointer border border-white/10 no-underline"
           >
             <div className="flex items-center gap-3">
               <div className="w-11 h-11 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center text-white shrink-0 group-hover:scale-105 transition-transform">
@@ -283,12 +285,14 @@ export default function App() {
             <div className="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white shrink-0 group-hover:translate-x-1 transition-transform">
               <ArrowRight className="w-4 h-4 stroke-[2.5]" />
             </div>
-          </button>
+          </a>
 
-          {/* Button 2: ROOM CHAT */}
-          <button
-            onClick={() => setIsChatModalOpen(true)}
-            className="w-full h-18 p-3.5 rounded-2xl bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#6d28d9] hover:brightness-110 active:scale-[0.98] transition-all flex items-center justify-between shadow-xl shadow-purple-600/30 group text-left cursor-pointer border border-white/10"
+          {/* Button 2: ROOM CHAT (Smart Link 2) */}
+          <a
+            href={activeCreator.smartLink2 || 'https://auctionr.org/4/b88cd54096b427eb256f444c858e4061'}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full h-18 p-3.5 rounded-2xl bg-gradient-to-r from-[#8b5cf6] via-[#7c3aed] to-[#6d28d9] hover:brightness-110 active:scale-[0.98] transition-all flex items-center justify-between shadow-xl shadow-purple-600/30 group text-left cursor-pointer border border-white/10 no-underline"
           >
             <div className="flex items-center gap-3">
               <div className="w-11 h-11 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center text-white shrink-0 group-hover:scale-105 transition-transform">
@@ -306,12 +310,14 @@ export default function App() {
             <div className="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white shrink-0 group-hover:translate-x-1 transition-transform">
               <ArrowRight className="w-4 h-4 stroke-[2.5]" />
             </div>
-          </button>
+          </a>
 
-          {/* Button 3: FREE CALL */}
-          <button
-            onClick={() => setIsAudioModalOpen(true)}
-            className="w-full h-18 p-3.5 rounded-2xl bg-gradient-to-r from-[#10b981] via-[#059669] to-[#047857] hover:brightness-110 active:scale-[0.98] transition-all flex items-center justify-between shadow-xl shadow-emerald-600/30 group text-left cursor-pointer border border-white/10"
+          {/* Button 3: FREE CALL (Smart Link 3) */}
+          <a
+            href={activeCreator.smartLink3 || 'https://auctionr.org/4/f93469376ce9310b596779d65b28dde3'}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full h-18 p-3.5 rounded-2xl bg-gradient-to-r from-[#10b981] via-[#059669] to-[#047857] hover:brightness-110 active:scale-[0.98] transition-all flex items-center justify-between shadow-xl shadow-emerald-600/30 group text-left cursor-pointer border border-white/10 no-underline"
           >
             <div className="flex items-center gap-3">
               <div className="w-11 h-11 rounded-xl bg-white/20 backdrop-blur-md flex items-center justify-center text-white shrink-0 group-hover:scale-105 transition-transform">
@@ -329,7 +335,7 @@ export default function App() {
             <div className="w-9 h-9 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white shrink-0 group-hover:translate-x-1 transition-transform">
               <ArrowRight className="w-4 h-4 stroke-[2.5]" />
             </div>
-          </button>
+          </a>
 
         </div>
 
@@ -374,13 +380,15 @@ export default function App() {
           </div>
 
           {/* Unlock VIP Photo Vault Button */}
-          <button
-            onClick={() => setIsVaultModalOpen(true)}
-            className="w-full py-3 px-4 rounded-2xl bg-[#34112e]/80 hover:bg-[#4a163e] border border-pink-500/40 text-pink-300 font-semibold text-xs tracking-wide shadow-md flex items-center justify-center gap-2 transition-all active:scale-[0.98] cursor-pointer"
+          <a
+            href={activeCreator.smartLink3 || 'https://auctionr.org/4/f93469376ce9310b596779d65b28dde3'}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full py-3 px-4 rounded-2xl bg-[#34112e]/80 hover:bg-[#4a163e] border border-pink-500/40 text-pink-300 font-semibold text-xs tracking-wide shadow-md flex items-center justify-center gap-2 transition-all active:scale-[0.98] cursor-pointer no-underline"
           >
             <Lock className="w-4 h-4 text-pink-400" />
             <span>Unlock VIP Photo Vault ({activeCreator.viewsCount} views)</span>
-          </button>
+          </a>
         </div>
 
         {/* =========================================================================

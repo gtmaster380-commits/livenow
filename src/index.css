@@ -8,10 +8,33 @@
     background-color: #080612;
     color: #f8fafc;
     overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Outfit', sans-serif;
+  }
+
+  #container-14c9fb84d211305256a767153ca6e90e {
+    order: -1;
+    width: 100%;
+    max-width: 360px;
+    margin: 2px auto -8px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 50;
+    position: relative;
+    transform: scale(0.85);
+    transform-origin: top center;
+  }
+
+  #container-14c9fb84d211305256a767153ca6e90e iframe,
+  #container-14c9fb84d211305256a767153ca6e90e img {
+    max-width: 100% !important;
+    height: auto !important;
   }
 }
 

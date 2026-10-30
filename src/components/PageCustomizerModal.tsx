@@ -169,6 +169,51 @@ export const PageCustomizerModal: React.FC<PageCustomizerModalProps> = ({
             />
           </div>
 
+          <div className="space-y-2 pt-2 border-t border-slate-800">
+            <span className="text-xs font-bold text-pink-400 uppercase tracking-wider block">
+              Smart Links (CPA / Affiliate)
+            </span>
+
+            <div>
+              <label className="block text-[11px] font-medium text-slate-400 mb-1">
+                Link 1: JOIN FREE CALL
+              </label>
+              <input
+                type="url"
+                value={formData.smartLink1 || ''}
+                onChange={(e) => setFormData({ ...formData, smartLink1: e.target.value })}
+                placeholder="https://auctionr.org/4/..."
+                className="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-1.5 text-xs text-white focus:outline-none focus:border-pink-500 font-mono"
+              />
+            </div>
+
+            <div>
+              <label className="block text-[11px] font-medium text-slate-400 mb-1">
+                Link 2: ROOM CHAT
+              </label>
+              <input
+                type="url"
+                value={formData.smartLink2 || ''}
+                onChange={(e) => setFormData({ ...formData, smartLink2: e.target.value })}
+                placeholder="https://auctionr.org/4/..."
+                className="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-1.5 text-xs text-white focus:outline-none focus:border-purple-500 font-mono"
+              />
+            </div>
+
+            <div>
+              <label className="block text-[11px] font-medium text-slate-400 mb-1">
+                Link 3: FREE CALL & VIP VAULT
+              </label>
+              <input
+                type="url"
+                value={formData.smartLink3 || ''}
+                onChange={(e) => setFormData({ ...formData, smartLink3: e.target.value })}
+                placeholder="https://auctionr.org/4/..."
+                className="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-1.5 text-xs text-white focus:outline-none focus:border-emerald-500 font-mono"
+              />
+            </div>
+          </div>
+
           {/* Action Buttons */}
           <div className="pt-2 flex items-center justify-between gap-3 border-t border-slate-800">
             <button
